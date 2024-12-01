@@ -10,10 +10,10 @@ reddit = praw.Reddit(
 )
 
 # Specify subreddit
-subreddit = reddit.subreddit("Anxiety")  # Change to "anxiety" or others as needed
+subreddit = reddit.subreddit("Depression")  # Change to "anxiety" or others as needed
 
 # Open a CSV file for writing
-with open("reddit_posts_comments_Anxiety.csv", "w", newline='', encoding="utf-8") as csv_file:
+with open("reddit_posts_comments_Depression.csv", "w", newline='', encoding="utf-8") as csv_file:
     writer = csv.writer(csv_file)
     # Write the header row
     writer.writerow(["Post Title", "Post Body", "Comment"])
