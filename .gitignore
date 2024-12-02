@@ -164,3 +164,6 @@ cython_debug/
 # My own additions
 .virtual_documents/
 getting_started.ipynb
+0.4.0
+1.6.0
+1.19.5
