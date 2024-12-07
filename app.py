@@ -28,9 +28,13 @@ class DepressionClassifierCNN(nn.Module):
         x = self.softmax(self.fc2(x))
         return x
 
+# Define your model again before loading state dict
 model = DepressionClassifierCNN(input_dim=600, num_classes=3)
-model.load_state_dict(torch.load("C:\LiveLife\depression_classifier_full_model.pth"))
-model.eval()
+
+# Load the saved state dict
+model.load_state_dict(torch.load("C:\LiveLife\depression_classifier_cnn.pth"))
+model.eval()  # Set the model to evaluation mode
+
 
 # Define suggestions
 suggestions = {
